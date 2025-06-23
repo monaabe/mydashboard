@@ -1,10 +1,14 @@
 import React from 'react'
 
+import Bar from './Bar';
+
+
  const BarChart=()=> {
-  return (
-    <div>
-      barrrr
-    </div>
-  )
-}
-export default BarChart
+return(
+    <Bar />
+);
+
+};
+
+
+export default BarChart;

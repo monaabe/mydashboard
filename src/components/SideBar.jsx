@@ -10,14 +10,21 @@ import {
   styled,
   Typography,
 } from "@mui/material";
-import React from "react";
+import ReceiptOutlinedIcon from '@mui/icons-material/ReceiptOutlined';
+import PieChartOutlineOutlinedIcon from '@mui/icons-material/PieChartOutlineOutlined';
+import BarChartOutlinedIcon from '@mui/icons-material/BarChartOutlined';
+import LiveHelpOutlinedIcon from '@mui/icons-material/LiveHelpOutlined';
+import CalendarViewMonthOutlinedIcon from '@mui/icons-material/CalendarViewMonthOutlined';
+import PermContactCalendarOutlinedIcon from '@mui/icons-material/PermContactCalendarOutlined';
+import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import InboxIcon from "@mui/icons-material/Inbox";
+import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
+/*import InboxIcon from "@mui/icons-material/Inbox";*/
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import MailIcon from "@mui/icons-material/Mail";
-import MuiDrawer from "@mui/material/Drawer";
+/*import MailIcon from "@mui/icons-material/Mail";*/
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import { useTheme } from "@mui/material/styles";
-import {
+/*import {
   BarChartOutlined,
   CalendarTodayOutlined,
   ContactsOutlined,
@@ -29,8 +36,12 @@ import {
   PieChartOutlined,
   ReceiptLongOutlined,
   TimelineOutlined,
-} from "@mui/icons-material";
+} from "@mui/icons-material";*/
+ import MuiDrawer from '@mui/material/Drawer';
+
 import { useNavigate } from "react-router-dom";
+import React from "react";
+import  ContactsOutlinedIcon from '@mui/icons-material/ContactsOutlined';
 
 const drawerWidth = 240;
 
@@ -92,26 +103,26 @@ const Drawer = styled(MuiDrawer, {
 }));
 
 const Array1 = [
-  { text: "Dashboard", icon: <HomeOutlined />, path: "/" },
-  { text: "Manage Team", icon: <ManageAccountsOutlined />, path: "/team" },
-  { text: "Contacts", icon: <ContactsOutlined />, path: "/contacts" },
+  { text: "Dashboard",icon:<HomeOutlinedIcon/>  ,path: "/" },
+  { text: "Manage Team",icon:<GroupsOutlinedIcon/>,  path: "/team" },
+  { text: "Contacts",icon:<ContactsOutlinedIcon/>, path: "/contacts" },
   {
     text: "Invoices Balances",
-    icon: <ReceiptLongOutlined />,
+    icon:<DescriptionOutlinedIcon/>,
     path: "/invoices",
   },
 ];
 
 const Array2 = [
-  { text: "ProfileForm", icon: <PersonOutlineOutlined />, path: "/form" },
-  { text: "Calendar", icon: <CalendarTodayOutlined />, path: "/calendar" },
-  { text: "FaQ Page", icon: <LiveHelpOutlined />, path: "/faq" },
+  { text: "ProfileForm",icon:< ReceiptOutlinedIcon />,  path: "/form" },
+  { text: "Calendar",icon:<CalendarViewMonthOutlinedIcon />, path: "/calendar" },
+  { text: "FaQ Page",icon:<LiveHelpOutlinedIcon />, path: "/faq" },
 ];
 
 const Array3 = [
-  { text: "Bar Chart", icon: <BarChartOutlined />, path: "/bar" },
-  { text: "Pie Chart", icon: <PieChartOutlined />, path: "/calendar" },
-  { text: "Geography Chart", icon: <MapOutlined />, path: "/line" },
+  { text: "Bar Chart",icon:<BarChartOutlinedIcon  />,  path: "/bar" },
+  { text: "Pie Chart",icon:<PieChartOutlineOutlinedIcon />,  path: "/pie" }
+  /*{ text: "Geography Chart",  path: "/line" },*/
 ];
 
 const SideBar = ({ open, handleDrawerClose }) => {

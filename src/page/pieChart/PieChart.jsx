@@ -1,10 +1,10 @@
-import React from 'react'
+import { Box } from '@mui/material';
+import React from 'react';
+
 
  const PieChart=()=> {
   return (
-    <div>
-      pechart
-    </div>
-  )
+    <div>pieeee</div>
+);
 }
-export default PieChart
+export default PieChart;
