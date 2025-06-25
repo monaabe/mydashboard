@@ -121,7 +121,7 @@ const Array2 = [
 
 const Array3 = [
   { text: "Bar Chart",icon:<BarChartOutlinedIcon  />,  path: "/bar" },
-  { text: "Pie Chart",icon:<PieChartOutlineOutlinedIcon />,  path: "/pie" }
+/*  { text: "Pie Chart",icon:<PieChartOutlineOutlinedIcon />,  path: "/pie" }*/
   /*{ text: "Geography Chart",  path: "/line" },*/
 ];
 

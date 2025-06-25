@@ -11,12 +11,11 @@ import {
 import Team from "./page/team/Team";
 import Dashboard from "./page/dashboard/Dashboard";
 import Contacts from "./page/contacts/Contacts";
-// @ts-ignore
 import Invoices from "./page/invoices/Invoices";
 import Form from "./page/form/Form";
 import Faq from "./page/faq/Faq";
 import Geography from "./page/geography/Geography";
-import PieChart from "./page/pieChart/PieChart";
+/*import PieChart from "./page/pieChart/PieChart";*/
 import BarChart from "./page/barChart/BarChart";
 import Calendar from "./page/calendar/Calendar";
 const router = createBrowserRouter(
@@ -29,7 +28,7 @@ const router = createBrowserRouter(
       <Route path="form" element={<Form />} />
       <Route path="faq" element={<Faq />} />
       <Route path="line" element={<Geography />} />
-      <Route path="pie" element={<PieChart />} />
+    {/*  <Route path="pie" element={<PieChart />} />*/}
       <Route path="bar" element={<BarChart />} />
       <Route path="calendar" element={<Calendar />} />
 
