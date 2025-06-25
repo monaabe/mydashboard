@@ -18,6 +18,7 @@ import Geography from "./page/geography/Geography";
 /*import PieChart from "./page/pieChart/PieChart";*/
 import BarChart from "./page/barChart/BarChart";
 import Calendar from "./page/calendar/Calendar";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
